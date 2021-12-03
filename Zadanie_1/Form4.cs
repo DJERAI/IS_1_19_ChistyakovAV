@@ -50,7 +50,7 @@ namespace Zadanie_1
         private void dataGridView1_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             
-            if (!e.RowIndex.Equals(-1) && e.ColumnIndex.Equals(-1) && e.Button.Equals(MouseButtons.Left))
+            if (!e.RowIndex.Equals(-1) && !e.ColumnIndex.Equals(-1) && e.Button.Equals(MouseButtons.Left))
             {
                 dataGridView1.CurrentCell = dataGridView1[e.ColumnIndex, e.RowIndex];
                 dataGridView1.CurrentRow.Selected = true;
@@ -60,7 +60,7 @@ namespace Zadanie_1
                 DateTime a = DateTime.Today;
                 DateTime b = Convert.ToDateTime(dataGridView1.Rows[Convert.ToInt32(index_rows5)].Cells[2].Value.ToString());
                 string Days =(a-b).ToString();//число дней
-                MessageBox.Show("С момента рождения прошло" + Days.Substring(0, Days.Length - 9) + "дней");
+                MessageBox.Show("С момента рождения прошло  " + Days.Substring(0, Days.Length - 9) + "  дней");
                 
             }
         }

@@ -139,9 +139,9 @@ namespace Zadanie_1
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(143, 255);
+            this.listBox1.Location = new System.Drawing.Point(115, 181);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(504, 134);
+            this.listBox1.Size = new System.Drawing.Size(504, 264);
             this.listBox1.TabIndex = 11;
             // 
             // label1
