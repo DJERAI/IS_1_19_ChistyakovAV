@@ -40,5 +40,10 @@ namespace Zadanie_1
             Form4 Form4 = new Form4();
             Form4.ShowDialog();
         }
+
+        private void Menu_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

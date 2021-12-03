@@ -17,19 +17,28 @@ namespace Zadanie_1
             InitializeComponent();
         }
 
+      
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             listBox1.Items.Clear();
-            CPU<string> cp1 = new CPU<string>(textBox1.Text, Convert.ToInt32(textBox2.Text), textBox3.Text, Convert.ToInt32(textBox4.Text), Convert.ToInt32(textBox5.Text), Convert.ToInt32(textBox6.Text));
+            CPU<string> cp1 = new CPU<string>(textBox1.Text, Convert.ToInt32(textBox2.Text), textBox3.Text, Convert.ToInt32(textBox4.Text),Convert.ToInt32(textBox5.Text),Convert.ToInt32(textBox6.Text));
+            cp1.Display(listBox1);
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             listBox1.Items.Clear();
-            GPU<string> gp1 = new GPU<string>(textBox1.Text, Convert.ToInt32(textBox2.Text), textBox3.Text, Convert.ToInt32(textBox7.Text), textBox8.Text, Convert.ToInt32(textBox9.Text));
+            GPU<string> vid1 = new GPU<string>(textBox1.Text, Convert.ToInt32(textBox2.Text), textBox3.Text, Convert.ToInt32(textBox7.Text), textBox8.Text,Convert.ToInt32(textBox9.Text));
+            vid1.Display(listBox1);
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }
@@ -130,4 +139,5 @@ namespace Zadanie_1
             lb.Items.Add($"Объём памяти - {RAM}");
         }
     }
+    
 }

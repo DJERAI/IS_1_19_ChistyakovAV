@@ -72,5 +72,10 @@ namespace Zadanie_1
             //Метод получения ID выделенной строки в глобальную переменную
             GetSelectedIDString();
         }
+
+        private void Form3_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

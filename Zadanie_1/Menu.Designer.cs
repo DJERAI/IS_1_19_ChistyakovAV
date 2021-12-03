@@ -86,6 +86,7 @@ namespace Zadanie_1
             this.Controls.Add(this.button1);
             this.Name = "Menu";
             this.Text = "Form2";
+            this.Load += new System.EventHandler(this.Menu_Load);
             this.ResumeLayout(false);
 
         }
